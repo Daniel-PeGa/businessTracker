@@ -17,4 +17,34 @@ myButton.addEventListener('click', (e)=>{
     </div>
     `;
     list.appendChild(myLi);
+
+    // localStorage.setItem('employee', JSON.stringify(myLi.value));
+    // console.log(localStorage);
+    // JSON.parse(localStorage.getItem('employee'));
+
+    // localStorage.clear();
+
+    //  I feel like I can make this work
+
+    let myLi_serialized = JSON.stringify(myLi);
+    console.log(myLi_serialized);
+
+
+
 });
+
+
+// var contHistEl = $('.container');
+// function renderHistory() {
+//     contHistEl.empty();
+
+//     for (let i = 0; i < employee.length; i++) {
+//         var key = localStorage.key(i);
+//         var value = localStorage.getItem(key);
+//         var li = $('<li>');
+//         li.text(value);
+//         contHistEl.append(li);
+//     }
+// };
+
+// renderHistory();
